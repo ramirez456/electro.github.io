@@ -15,13 +15,21 @@
 //     return view('welcome');
 // });
 
-
 Route::get('/', function () {
-    return view('view.dashboard');
+    return view('login.login');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/concesionaria', function () {
+    return view(' concesionaria.index');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// API para consumir datos  de la concesionaria
 Route::resource('/empresas','ConcesionariaController',['except'=>'show','create','edit']);
