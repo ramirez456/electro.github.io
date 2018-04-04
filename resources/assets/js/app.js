@@ -111,3 +111,32 @@ new Vue({
 
 	}
 });
+
+new Vue({
+	el: '#proceso',
+
+	created: function(){
+		alert('estamos al inicio');
+	},		
+
+	data: {
+		keeps: [],
+		newrazon: '',
+		newruc: '',
+		newdireccion: '',
+		newtelefono: '',
+		fillKeep: {'id': '', 'razon': '', 'ruc': '', 'direccion': '', 'telefono': ''},
+		pagination: {
+			'total' :  0,
+            'current_page' :  0,
+            'per_page' :  0,
+            'last_page' :  0,
+            'from' :  0,
+            'to' :  0,
+		},
+		errors: []
+
+	}
+	
+
+});

@@ -27,7 +27,7 @@ class ConcesionariaController extends Controller
                 'per_page'      =>  $concesionaria->perPage(),
                 'last_page'     =>  $concesionaria->lastPage(),
                 'from'          =>  $concesionaria->firstItem(),
-                'to'            =>  $concesionaria->lastPage(),
+                'to'            =>  $concesionaria->lastItem(),
             ],
             'empresas' => $concesionaria
         ];
