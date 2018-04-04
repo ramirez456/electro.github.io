@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <link rel="icon" type="image/png" href="images/icons/icon.png"/>
     <title>@yield('titulo')</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -128,7 +128,9 @@
 
                             <li class="alertas_notificaciones"><a class="hover_notificaciones" href="#" id="noti"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a></li>
                             
-                            <li class="alertas_notificaciones"><a class="hover_notificaciones" href="{{url('/logout')}}"  id="salir" ><i class="fa fa-power-off" aria-hidden="true"></i>Salir</a></li>
+                            <li class="alertas_notificaciones">
+                                <a class="hover_notificaciones" href="{{url('/logout')}}"  id="salir" ><i class="fa fa-power-off" aria-hidden="true"></i>Salir</a></li>
+
                         </ul>
                     </li>
 
@@ -157,15 +159,14 @@
                          <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-indent"></i>Nuevo</a></li>
-                        <li><a href="#"><i class="fa fa-file-text"></i>listar</a></li>
+                        <li><a href="#"><i class="fa fa-indent"></i>Procesos</a></li>                        
                         <li><a href="#"><i class="fa fa-calendar-plus-o"></i>Asignar</a></li>
                     </ul>
                 </li>
 
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-user-plus"></i> <span>Usarios</span>
+                        <i class="fa fa-user-plus"></i> <span>Usuarios</span>
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">

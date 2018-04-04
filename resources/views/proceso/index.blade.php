@@ -1,6 +1,6 @@
 @extends('layout.admin')
 @section('titulo')
-	Concesionaria
+	Procesos
 @endsection
 @section('alertas')
 	<div id="notificaciones_result"></div>
@@ -18,7 +18,7 @@
 		<div class="profile-empresa-content" id="crud">
 		  	<div class="profile-tab active" >
 				<div class="top-producto">
-					<h4>Empresas</h4>
+					<h4>Procesos</h4>
 					<div class="button-wrapper">
 						<button type="button" id="nuevo-producto" class="btn btn-primary btn-primary2" data-toggle='modal' data-target='#create'><i class="fa fa-plus"></i>&nbsp; nuevo</button>
 					</div>
